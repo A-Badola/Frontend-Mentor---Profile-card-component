@@ -1,0 +1,94 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+
+body{  
+  max-height: 41.6875rem;
+  background-color: $darkCyan;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  //display: flex;
+  //align-items: center;
+  //flex-direction: column;
+  //align-content: center;
+    .bottomback{
+      background-image: url(/images/bg-pattern-bottom.svg);
+      background-position-y: 15%;
+      background-position-x: 0%;
+      background-repeat: no-repeat;
+      @include breakpoint-up(large){
+        width: 60rem;
+        height: 29.0625rem;
+        background-position-y: -20%;
+        background-position-x: 600%;
+        background-size: 95%;
+      }
+      position: absolute;
+      width: 13.4375rem;
+      height: 18.4375rem;
+      bottom:0%;
+      right:0%;
+    }
+
+    .topback{
+      background-image: url(/images/bg-pattern-top.svg);
+      background-position-y: 85%;
+      background-position-x: 100%;
+      width: 13.4375rem;
+      height: 18.4375rem;
+      @include breakpoint-up(large){
+        background-position-y: 100%;
+        background-position-x: 160%;
+        background-size: 145%;
+        width: 57.8125rem;
+        height: 36.5625rem;
+      }
+      background-repeat: no-repeat;
+      position: absolute;
+      top:0%;
+      left:0%;
+    }
+
+
+    h1{
+      font-size:1.00rem;
+      margin-top: 0;
+      margin-bottom: 0.9375rem;
+      @include breakpoint-up(large){
+        margin-bottom: 1.25rem;
+      }
+      span{
+        font-size: 1.00rem;
+        padding-left: 0.625rem;
+      }
+    }
+
+    span{
+      font-size: 0.875rem;
+      color: $darkGrayBlue;
+      font-weight: 400;
+    }
+
+    a{
+      margin:0;
+      padding:0;
+      line-height: 1.5;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: $veryDarkBlue;
+      text-decoration: none;
+      span{
+        font-size: 0.625rem;
+        letter-spacing: 1px;
+        color: $darkGrayBlue;
+        font-weight: 400;
+      }
+    }
+}
